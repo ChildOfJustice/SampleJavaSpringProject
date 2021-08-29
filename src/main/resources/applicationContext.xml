@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    For using the @Component annotation-->
+    <context:component-scan base-package="ru.yuldashev.learning.spring"/>
+
+    <context:property-placeholder location="musicPlayer.properties"/>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    Above is for xml beans configuration-->
+
+
+
+<!--    <bean id="testBean"-->
+<!--          class="ru.yuldashev.learning.spring.oneBin.TestBean">-->
+<!--        <constructor-arg value="Neil"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="musicBean"-->
+<!--          class="ru.yuldashev.learning.spring.depInjection.ClassicalMusic"-->
+<!--          init-method="initialization"-->
+<!--          destroy-method="destroy"-->
+<!--    >-->
+<!--    </bean>-->
+
+<!--    DI through constructor-->
+<!--    <bean id="musicPlayer"-->
+<!--          class="ru.yuldashev.learning.spring.depInjection.MusicPlayer">-->
+<!--        <constructor-arg ref="musicBean"/>-->
+<!--    </bean>-->
+
+<!--    DI through setters-->
+<!--    <bean id="musicPlayer"-->
+<!--          class="ru.yuldashev.learning.spring.depInjection.MusicPlayer">-->
+<!--        <property name="music" ref="musicBean"/>-->
+
+<!--        <property name="name" value="MyPlayer"/>-->
+<!--        <property name="volume" value="100"/>-->
+<!--    </bean>-->
+
+
+<!--    <context:property-placeholder location="musicPlayer.properties"/>-->
+
+<!--    <bean id="musicPlayer"-->
+<!--          class="ru.yuldashev.learning.spring.depInjection.MusicPlayer"-->
+<!--          scope="prototype">-->
+
+<!--        <property name="music" ref="musicBean"/>-->
+
+<!--        <property name="name" value="${musicPlayer.name}"/>-->
+<!--        <property name="volume" value="${musicPlayer.volume}"/>-->
+
+<!--    </bean>-->
+
+</beans>
