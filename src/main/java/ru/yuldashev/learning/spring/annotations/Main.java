@@ -27,6 +27,7 @@ public class Main {
         Device device = context.getBean(Device.class);
         System.out.println(device);
 
+        System.out.println("Application context was initialized and consists of " + context.getBeanDefinitionCount() + " beans");
         context.close();
     }
 }

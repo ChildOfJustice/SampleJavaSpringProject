@@ -38,7 +38,7 @@ ArtifactId - the name   (spring-app1)
 
 
 Inversion of control (IoC)
-there is an interface and several classes implemebt it
+there is an interface and several classes implement it
 in some other class we have dependencies on this interface
 and at some point we are creating several objects of this interface in code
 
